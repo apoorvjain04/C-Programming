@@ -1,0 +1,20 @@
+
+/* DEVELOPER ---------- APOORV JAIN
+   DATE --------------- 08-DEC-2016
+   PROBLEM STATEMENT -- COPY INPUT TO OUTPUT USING GETCHAR AND PUTCHAR FUNCTIONS
+*/
+
+//HEADER FILE
+#include<stdio.h>
+
+
+// MAIN FUNCTION
+void main()
+{
+	int c;
+	printf("ENTER THE TEXT- WHEN ENTER WILL BE PRESSED OUTPUT WILL DISPLAYED \n");
+	printf("\t\tTO END THE PROGRAM PRESS Ctrl+c \n");
+	
+	while((c=getchar())!=EOF)  //GETCHAR RETURNS ASCII VALUE
+		putchar(c);	   //PUTCHAR TAKES INPUT AS ASCII VALUE
+}
