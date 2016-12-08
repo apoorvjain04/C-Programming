@@ -1,0 +1,21 @@
+If you want to see how a file looks after :
+
+The pre processing has been done:
+use following command in linux
+suppose your filename is file1.c
+
+  gcc -E file1.c > file1.i
+  
+file1.i will be the output,you can open the file1.i in text editor.
+
+Now you can give this file to a compiler 
+
+  gcc -S file1.i
+  
+The output of above command will be a file that is in assembly language -- named -- file1.s
+
+giving this file to assembler will generate object file, command for that will be
+
+  gcc -c file1.s
+  
+output of above command will be file1.o an object file for your code.
